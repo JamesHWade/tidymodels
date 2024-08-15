@@ -24,6 +24,7 @@ tidymodels_prefer <- function(quiet = TRUE) {
       conflicted::conflict_prefer("neighbors",       winner = "dials",     quiet = quiet)
       conflicted::conflict_prefer("prune",           winner = "dials",     quiet = quiet)
       conflicted::conflict_prefer("smoothness",      winner = "dials",     quiet = quiet)
+      conflicted::conflict_prefer("explain",         winner = "DALEX",     quiet = quiet)
       conflicted::conflict_prefer("collapse",        winner = "dplyr",     quiet = quiet)
       conflicted::conflict_prefer("combine",         winner = "dplyr",     quiet = quiet)
       conflicted::conflict_prefer("filter",          winner = "dplyr",     quiet = quiet)
